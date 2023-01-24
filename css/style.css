@@ -1,0 +1,124 @@
+:root {
+  --c00: #FFFFFF;
+  --c01: #F7F7F7;
+  --c02: #EDEDED;
+  --c03: #DEDEDE;
+  --c04: #CCCCCC;
+  --c05: #B3B3B3;
+  --c06: #9C9C9C;
+  --c07: #707070;
+  --c08: #707070;
+  --c09: #404040;
+  --c10: #2E2E2E;
+  --c11: #121212;
+  --c12: #000000;
+
+  --p01: #FFBB00;
+  --p02: #E4A30B;
+  --p03: #A66F00;
+  --p04: #664400;
+  --p05: #332200;
+
+  --plinear: linear-gradient(180deg, #FFBF00 0%, #F2A60C 100%);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-bg {
+  background-color: var(--c12);
+
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: space-between;
+  /* Separando o logo do menu de navagação - um em cada canto da página */
+  align-items: center;
+  /* Alinhando itens verticalmente ao centro */
+  padding: 1.25rem;
+  /* limitar tamanho do container */
+  box-sizing: border-box;
+  max-width: 1200px;
+  /* centralizar conteudo */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.header-menu a {
+  padding-top: 1rem 0;
+  display: inline-block;
+  color: var(--c00);
+  font-size: 1.125rem;
+  line-height: 2rem;
+  position: relative;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: var(--c00);
+  margin-top: 0.125rem;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+
+/* propriedades para telas abaixo de 800px */
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 1.25rem;
+  }
+
+  .header-menu a {
+    background-color: var(--c11);
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+  }
+
+  .header-menu a:hover {
+    background-color: var(--c10);
+  }
+
+  .header-menu a::after {
+    display: none;
+  }
+}
+
+/* propriedades para telas abaixo de 600px */
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 0.75rem;
+  }
+
+  .header-menu a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}
