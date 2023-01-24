@@ -22,20 +22,35 @@
   --plinear: linear-gradient(180deg, #FFBF00 0%, #F2A60C 100%);
 }
 
+/* PROPRIEDADES PADRÃO */
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
+h1,
+ul,
+p {
   margin: 0;
+}
+
+ul {
   padding: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* PROPRIEDADES DO SITE */
 
 .header-bg {
   background-color: var(--c12);
@@ -121,4 +136,65 @@ a {
     padding: 0.5rem 0.75rem;
     font-size: 0.875rem;
   }
+}
+
+/* INTRODUÇÃO */
+.intro-bg {
+  background-color: var(--c12);
+  color: var(--c00);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2.5rem;
+  /* limitar tamanho do container */
+  box-sizing: border-box;
+  max-width: 1200px;
+  /* centralizar conteudo */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.intro-conteudo {
+  align-self: end;
+  padding-bottom: 5rem;
+}
+
+.intro-conteudo h1 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  /* utilizando-se valores absolutos no line-height ele é calculado com base no font-size e acaba ficando bom mesmo se for feita alguma alteração no tamanho da fonte */
+  line-height: 1.125;
+}
+
+.intro-conteudo h1 span {
+  color: var(--p01);
+}
+
+.intro-conteudo p {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--c05);
+}
+
+.intro-conteudo a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(#FFBF00, #F2A60C);
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  color: var(--p05);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-weight: bold;
+
+}
+
+.intro-conteudo a:hover {
+  background: linear-gradient(#FFB60D, #E59317);
 }
