@@ -142,6 +142,8 @@ img {
 .intro-bg {
   background-color: var(--c12);
   color: var(--c00);
+  /* técnica para permitir que a imagem "vaze" para baixo do background, mediante uso de uma sombra (box shadow)que passa a ser da cor que precisamos no local em que a imagem vaza */
+  box-shadow: inset 0 -120px var(--c00);
 }
 
 .intro {
@@ -158,9 +160,16 @@ img {
   padding-right: 1.25rem;
 }
 
+.intro img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 .intro-conteudo {
   align-self: end;
-  padding-bottom: 5rem;
+  /* valor fixado em 200px para compensar o box-shadow usado para criar a impressão da imagem vazando por baixo do background preto */
+  padding-bottom: 12.5rem;
 }
 
 .intro-conteudo h1 {
