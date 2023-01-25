@@ -4,7 +4,7 @@
   background: linear-gradient(#FFBF00, #F2A60C);
   border-radius: 5px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-  color: var(--p05);
+  color: var(--cor-p05);
   text-transform: uppercase;
   font-size: 1.125rem;
   line-height: 1.33;

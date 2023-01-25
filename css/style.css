@@ -1,6 +1,11 @@
-@import "./global/header.css";
 @import "./global/global.css";
-/* COMPONENTES */
+/* CLASSES UTILITÁRIAS DE TIPOGRAFIA E CORES */
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+/* HEADER */
+@import "./global/header.css";
+
+/* COMPONENTES*/
 @import "./utilidades/componentes.css";
 
 /* HOME */

@@ -1,9 +1,8 @@
 /* INTRODUÇÃO */
 .intro-bg {
-  background-color: var(--c12);
-  color: var(--c00);
+  background-color: var(--cor-12);
   /* técnica para permitir que a imagem "vaze" para baixo do background, mediante uso de uma sombra (box shadow)que passa a ser da cor que precisamos no local em que a imagem vaza */
-  box-shadow: inset 0 -120px var(--c00);
+  box-shadow: inset 0 -120px var(--cor-00);
 }
 
 .intro {
@@ -34,24 +33,10 @@
 
 .intro-conteudo h1 {
   margin-bottom: 2rem;
-  font-size: 4rem;
-  /* utilizando-se valores absolutos no line-height ele é calculado com base no font-size e acaba ficando bom mesmo se for feita alguma alteração no tamanho da fonte */
-  line-height: 1.125;
-  font-family: 'Poppins';
-  font-weight: 600;
-}
-
-.intro-conteudo h1 span {
-  color: var(--p01);
 }
 
 .intro-conteudo p {
   margin-bottom: 1.25rem;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: var(--c05);
-  font-family: 'Roboto';
-  font-weight: 400;
 }
 
 /* propriedades para telas abaixo de 1200px */
@@ -70,9 +55,8 @@
   .intro-bg {
     background-color: #111111;
     padding-top: 2.5rem;
-    box-shadow: inset 0 -60px var(--c00);
+    box-shadow: inset 0 -60px var(--cor-00);
   }
-
 
   /* passar a usar somente uma coluna */
   .intro {
