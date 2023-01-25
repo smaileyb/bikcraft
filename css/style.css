@@ -207,3 +207,56 @@ img {
 .intro-conteudo a:hover {
   background: linear-gradient(#FFB60D, #E59317);
 }
+
+/* propriedades para telas abaixo de 1200px */
+@media (max-width: 1200px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1.125rem;
+  }
+}
+
+/* propriedades para telas abaixo de 800px */
+@media (max-width: 800px) {
+  .intro-bg {
+    background-color: #111111;
+    padding-top: 2.5rem;
+    box-shadow: inset 0 -60px var(--c00);
+  }
+
+
+  /* passar a usar somente uma coluna */
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro p {
+    font-size: 1.125rem;
+  }
+
+  .intro img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .intro-conteudo {
+    padding-bottom: 0;
+  }
+}
+
+/* propriedades para telas abaixo de 600px */
+@media (max-width: 600px) {
+  .intro a {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+}
