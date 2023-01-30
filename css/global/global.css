@@ -7,8 +7,12 @@ body {
 }
 
 h1,
+h2,
+h3,
+h4,
 ul,
-p {
+p,
+blockquote {
   margin: 0;
 }
 
@@ -25,4 +29,10 @@ a {
 img {
   max-width: 100%;
   display: block;
+
+}
+
+/* Tudo que tiver "src" e acabar com .jpg receberá o seguinte estilo */
+[src$=".jpg"] {
+  border-radius: 5px;
 }

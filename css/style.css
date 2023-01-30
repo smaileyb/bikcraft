@@ -10,3 +10,8 @@
 
 /* HOME */
 @import "./home/intro.css";
+@import "./bicicletas/bicicletas-lista.css";
+@import "./home/tech.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "./seguros/seguros.css";
