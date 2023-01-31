@@ -33,6 +33,32 @@
   background: var(--cor-09);
 }
 
+/* COMPONENTE DE TITULO */
+.titulo-bg {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  background-color: var(--cor-11);
+}
+
+.titulo p {
+  margin-bottom: 0.25rem;
+}
+
+/* propriedades para telas abaixo de 800px */
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
+
+
 /* propriedades para telas abaixo de 600px */
 @media (max-width: 600px) {
   .botao {
