@@ -33,6 +33,25 @@
   background: var(--cor-09);
 }
 
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 0.75rem;
+  background: url(../../img/icones/seta.svg);
+  transition: transform 0.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
 /* COMPONENTE DE TITULO */
 .titulo-bg {
   padding-top: 3.75rem;
