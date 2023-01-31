@@ -14,7 +14,6 @@
 @import "./home/tech.css";
 @import "./home/parceiros.css";
 @import "./home/depoimento.css";
-@import "./seguros/seguros.css";
 
 /* FOOTER */
 @import "./global/footer.css";
@@ -24,3 +23,8 @@
 
 /* BICICLETAS */
 @import "./bicicletas/bicicletas.css";
+
+/* SEGUROS */
+@import "./seguros/seguros.css";
+@import "./seguros/vantagens.css";
+@import "./seguros/perguntas.css";
