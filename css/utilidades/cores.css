@@ -36,6 +36,10 @@
   color: var(--cor-03);
 }
 
+.cor-4 {
+  color: var(--cor-04);
+}
+
 .cor-5 {
   color: var(--cor-05);
 }

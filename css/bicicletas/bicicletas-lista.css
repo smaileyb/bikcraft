@@ -17,7 +17,10 @@
   margin-left: auto;
   /* criar barra de scroll especificamente para esse conteúdo no eixo x */
   overflow-x: auto;
+}
 
+#bicicleta .bicicletas-lista ul {
+  padding: 0 0 1.25rem 0;
 }
 
 .bicicletas-lista li {
