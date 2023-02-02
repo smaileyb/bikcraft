@@ -32,3 +32,10 @@
 @import "./seguros/seguros.css";
 @import "./seguros/vantagens.css";
 @import "./seguros/perguntas.css";
+
+/* CONTATO */
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
+
+/* FORMULÁRIO */
+@import "./utilidades/formulario.css";
