@@ -42,3 +42,16 @@ perguntas.forEach((pergunta) => {
 
   })
 })
+
+
+//GALERIA DE BICICLETAS
+
+const galeria = document.querySelectorAll(".bicicleta-imagens img")
+const galeriaContainer = document.querySelector(".bicicleta-imagens")
+
+galeria.forEach((imagem)=>{
+  imagem.addEventListener("click", (event)=>{
+    const imgAtual = event.currentTarget
+    galeriaContainer.prepend(imgAtual)
+  })
+})
