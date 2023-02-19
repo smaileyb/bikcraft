@@ -2,6 +2,7 @@
 /* CLASSES UTILITÁRIAS DE TIPOGRAFIA E CORES */
 @import "./utilidades/tipografia.css";
 @import "./utilidades/cores.css";
+@import "./utilidades/animacao.css";
 /* HEADER */
 @import "./global/header.css";
 

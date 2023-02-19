@@ -49,9 +49,19 @@ perguntas.forEach((pergunta) => {
 const galeria = document.querySelectorAll(".bicicleta-imagens img")
 const galeriaContainer = document.querySelector(".bicicleta-imagens")
 
-galeria.forEach((imagem)=>{
-  imagem.addEventListener("click", (event)=>{
+galeria.forEach((imagem) => {
+  imagem.addEventListener("click", (event) => {
     const imgAtual = event.currentTarget
-    galeriaContainer.prepend(imgAtual)
+    const media = matchMedia("(min-width: 1000px)").matches
+    if (media) {
+      galeriaContainer.prepend(imgAtual)
+    }
+
   })
 })
+
+// PLUGIN DE ANIMAÇÃO
+
+if (window.SimpleAnime) {
+  new SimpleAnime()
+}
